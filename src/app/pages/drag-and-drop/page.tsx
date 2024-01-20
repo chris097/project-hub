@@ -23,9 +23,11 @@ const DragAndDrop = () => {
     const file = new FileReader;
 
     file.onload = function () {
-      if (typeof file.result !== 'string') return;
+      // if (typeof file.result !== 'string') return;
 
-      setFile(target.files[0]);
+      // setFile(target.files[0]);
+
+      console.log('file', file.result);
     };
     
     file.readAsDataURL(target.files[0])
