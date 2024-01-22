@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { IoCloudUploadOutline } from 'react-icons/io5';
@@ -6,11 +7,11 @@ const DragAndDropMultipleFiles = () => {
   const [previews, setPreviews] = useState<string[]>([]);
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
-    const newPreviews = [];
+    const newPreviews: any = [];
 
     acceptedFiles.forEach(file => {
       const reader = new FileReader();
-      reader.onload = function(e) {
+      reader.onload = function(e: any) {
         newPreviews.push(e.target.result as string);
         if (newPreviews.length === acceptedFiles.length) {
           setPreviews(newPreviews);
