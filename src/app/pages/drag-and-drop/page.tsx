@@ -29,6 +29,8 @@ const DragAndDrop = () => {
 
   };
 
+  console.log(preview)
+
     return (
       <div>
         <Header />
