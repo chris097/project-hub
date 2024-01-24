@@ -14,7 +14,11 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        montserrat: ["Montserrat, sans-serif"]
+        montserrat: ["Montserrat, sans-serif"],
+        openSans: ["Open Sans, sans-serif"]
+      },
+      gridTemplateColumns: {
+        "1/5": "1fr 5fr"
       }
     },
   },

@@ -3,8 +3,9 @@ import { IProjectTabs } from "@/types";
 import Link from "next/link";
 
 const projectTabs: IProjectTabs[]  = [
-  { id: 1, name: "React Drag And Drop", link: "/pages/drag-and-drop" },
-  { id: 2, name: "React Drag And Drop Multiple files", link: "/pages/drag-and-drop-multiple-files" },
+  { id: 1, name: "Custom Calendar", link: "/pages/calendar" },
+  { id: 2, name: "React Drag And Drop", link: "/pages/drag-and-drop" },
+  { id: 3, name: "React Drag And Drop Multiple files", link: "/pages/drag-and-drop-multiple-files" },
 ];
 
 

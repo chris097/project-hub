@@ -22,9 +22,9 @@ const getMonth = (month= dayjs().month()) => {
 const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
   return (
-    <div>
+    <div className='flex h-screen flex-col'>
       <CalendarHeader />
-      <div>
+      <div className='flex flex-1'>
         <Sidebar />
         <Month month={currentMonth} />
       </div>
