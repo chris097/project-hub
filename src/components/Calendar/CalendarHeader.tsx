@@ -20,7 +20,7 @@ const CalendarHeader = () => {
         <header className='px-4 py-2 flex items-center font-openSans'>
             <Image src={calendar} alt="calendar" className='mr-4 ml-4 w-12 h-12' />
             <h1 className='mr-10 text-xl text-gray-500 font-bold'>Calendar</h1>
-            <button className="px-4 py-2 border text-gray-800 rounded mr-10">Today</button>
+            <button className="px-4 py-2 border text-gray-800 m-2 rounded mr-10">Today</button>
             <button onClick={handlePreviousBtn}>
                 <span className='text-gray-600 mx-10 cursor-pointer'>
                    <FaChevronLeft />
