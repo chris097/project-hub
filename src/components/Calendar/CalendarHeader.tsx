@@ -27,7 +27,7 @@ const CalendarHeader = () => {
                 </span>
             </button>
             <button onClick={handleNextBtn}>
-                <span className='text-gray-600 mx-5 cursor-pointer'>
+                <span className='text-gray-600 mx-7 cursor-pointer'>
                    <FaChevronRight />
                 </span>
             </button>
