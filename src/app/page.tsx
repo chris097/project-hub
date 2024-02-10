@@ -5,10 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const projectTabs: IProjectTabs[]  = [
-  { id: 1, name: "Input Count", link: "/pages/input-count" },
-  { id: 1, name: "Custom Calendar", link: "/pages/calendar" },
-  { id: 2, name: "React Drag And Drop", link: "/pages/drag-and-drop" },
-  { id: 3, name: "React Drag And Drop Multiple files", link: "/pages/drag-and-drop-multiple-files" },
+  { id: 1, name: "Book Date", link: "/pages/book-date" },
+  { id: 2, name: "Input Count", link: "/pages/input-count" },
+  { id: 3, name: "Custom Calendar", link: "/pages/calendar" },
+  { id: 4, name: "React Drag And Drop", link: "/pages/drag-and-drop" },
+  { id: 5, name: "React Drag And Drop Multiple files", link: "/pages/drag-and-drop-multiple-files" },
 ];
 
 export default function Home() {

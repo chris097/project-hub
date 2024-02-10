@@ -9,6 +9,8 @@ import { getMonth } from '@/utils/getMonth';
 const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
   const { monthIndex } = useContext(GlobalContext);
+
+  console.log(currentMonth)
   
   useEffect(() => { 
     setCurrentMonth(getMonth(monthIndex))
