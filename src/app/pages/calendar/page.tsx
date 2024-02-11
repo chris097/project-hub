@@ -16,6 +16,7 @@ const Calendar = () => {
     setCurrentMonth(getMonth(monthIndex))
   }, [monthIndex]);
 
+
   return (
     <div className='flex h-screen flex-col'>
       <CalendarHeader />
