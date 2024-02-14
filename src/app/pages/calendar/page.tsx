@@ -20,7 +20,7 @@ const Calendar = () => {
   return (
     <div className='flex h-screen flex-col'>
       <CalendarHeader />
-      <div className='flex flex-1 n'>
+      <div className='flex flex-1'>
         <Sidebar />
         <Month month={currentMonth} />
       </div>
