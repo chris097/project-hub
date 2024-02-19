@@ -44,6 +44,19 @@ const Month = ({ month }: any) => {
 const BookDate = () => {
     const [currentMonth, setCurrentMonth] = useState(getBookedMonth());
     console.log(currentMonth)
+
+    const [formLists, setFormLists] = useState([true]); 
+
+   const handleAddFormList = () => {
+    setFormLists([...formLists, true]); 
+  };
+
+  const handleDeleteFormList = (index: any) => {
+    const updatedFormLists = [...formLists];
+    updatedFormLists.splice(index, 1);
+    setFormLists(updatedFormLists);
+  };
+    
     return (
         <div className='border h-[366px] w-[444px] m-10 p-5'>
             <p>Select your booking date</p>
@@ -60,6 +73,35 @@ const BookDate = () => {
                 </p>
             </div>
             <Month month={currentMonth} />
+
+             
+            <div>
+      <button onClick={handleAddFormList}>Add Form</button>
+      {/* Render form lists based on the state array */}
+      {formLists.map((showFormList, index:number) => (
+        <div key={index}>
+          {showFormList && (
+            <form>
+              {/* Your form elements here */}
+              <label>
+                Name:
+                <input type="text" name="name" />
+              </label>
+              <label>
+                Email:
+                <input type="email" name="email" />
+              </label>
+              {/* Add more form fields as needed */}
+              <button onClick={() => handleDeleteFormList(index)}>Delete Form</button>
+            </form>
+          )}
+        </div>
+      ))}
+    </div>
+
+export default MyComponent;
+
+
         </div>
     );
 };
