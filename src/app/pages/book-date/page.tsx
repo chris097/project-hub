@@ -89,7 +89,7 @@ const BookDate = () => {
               </label>
               <label>
                 Email:
-                <input type="email" name="email" />
+                <input type="email" name="emai" />
               </label>
               {/* Add more form fields as needed */}
               <button onClick={() => handleDeleteFormList(index)}>Delete Form</button>
