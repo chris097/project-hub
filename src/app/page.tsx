@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const projectTabs: IProjectTabs[]  = [
+  { id: 1, name: "Task Card", link: "/pages/task-card" },
   { id: 1, name: "Book Date", link: "/pages/book-date" },
   { id: 2, name: "Input Count", link: "/pages/input-count" },
   { id: 3, name: "Custom Calendar", link: "/pages/calendar" },
