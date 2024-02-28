@@ -110,8 +110,6 @@ const Task = ({ task, tasks, setTasks }) => {
         })
     }));
 
-    console.log(isDragging)
-
     const handleRemove = (id) => {
         console.log(id)
 
